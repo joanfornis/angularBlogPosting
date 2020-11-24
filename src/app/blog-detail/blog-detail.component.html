@@ -1,1 +1,7 @@
-<p>blog-detail works!</p>
+<div class="post" *ngFor="let post of posts | filter:postUrl">
+    <img src="{{post.image}}">
+    <h1>{{post.title}}</h1>
+    <h3>{{post.subtitle}}</h3>
+    <p>{{post.content}}</p>
+    <hr>
+</div>

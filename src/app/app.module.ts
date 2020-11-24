@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogCardsComponent } from './blog-cards/blog-cards.component';
 
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { BlogCardsComponent } from './blog-cards/blog-cards.component';
     BlogCardsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
